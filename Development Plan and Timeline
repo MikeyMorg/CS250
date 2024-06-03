@@ -1,0 +1,19 @@
+Overview:
+Our online movie ticketing system will allow users to search and purchase movie tickets. Users will be able to attend showtimes
+at their preferred time and theater location. 
+
+Software Architecture
+  Structure: how the components of the software system interact and utilize each other's functionality
+    Maximize cohesion of modules, allowing for an easy to follow interface
+  Security: take a C.I.A. approach
+
+Software Design
+  Structure: the system will provide icons and images
+    The systems modules and classes will be directy interconnected. 
+
+Partitioning of tasks and Team member responsibilities: 
+Week 1
+  Establish Software Requirements Specification
+    Give client overview of online movie ticketing system 
+  Establish Software Design Specification 
+
