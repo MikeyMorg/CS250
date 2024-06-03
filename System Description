@@ -1,0 +1,10 @@
+System Description
+
+Our system is a movie ticketing software that will allow this business to be able to make an easier way for customers to be able to buy movie tickets straight from their phones or other web-capable devices.
+The system will allow features such as handling the payment of up to 20 tickets per transaction, reserving the seats and tickets for the respective movie showing, loyalty account purchases, user selection of their seats for deluxe theaters,
+and a queue-ng system for high volumes of requests for a single showing.
+
+The software system will have accessibility features such as, three language support (English, Spanish, Swedish), allowing one user account to be signed in per device, said accounts can store information such as loyalty pointy and payment information for convenience use later.
+Additionally, all tickets sold will be secure by creating a unique and non-replicable ticket for user’s security during their transaction.
+
+The software will be able to support credit card, paypal and bitcoin.
