@@ -1,6 +1,6 @@
 Class Movie
 Attributes: 
-“movieTitle” (String) – Give the title of the movie 
+“movieTitle” (String) – Give the title of the movie  
 “date” (Integer) – Date of the movie
 “time”(Integer) – Time of the movie
 “movieRating” (String) – Rating of the film
@@ -10,7 +10,13 @@ Operations:
 setName(Name: String) (Void) – Input or Sets the name of the movie
 getName(Name: String) – Output or gets the name of the movie
 getFreeSeats() (Map – Integer, Boolean) – Fetches all the free seats in map form
-isSeatFree(Index: Integer) – Returns Boolean value after checking if specified seat is free or not
+isSeatFree(Index: Integer) – Returns Boolean value after checking if the specified seat is free or not
+Arrow Pointers:
+To TheaterLocation - Indicates that the movie is shown at a specified theatre location, such that the class TheatreLocation can hold a list of attributes movie
+To Ticket - Indicates that each movie will have multiple tickets with unique ticket units.
+To PostReview - Indicates that every movie listed on software can have reviews posted on it by users.
+To SystemInfo - Indicates that the movie can be modified that including updation, deletion, and addition based on the user's choice
+
 
 Class TheatreLocation
 Attributes:
@@ -25,6 +31,7 @@ Attributes:
 “emailAddress” (String) – Mentions the email address of the User
 Operations: Null
 
+
 Class SystemInfo
 Attributes: Null
 Operations: 
@@ -32,6 +39,8 @@ updatedate(movie: Movie, date: Integer) (Void) – Updates the date of movie
 updatetime(movie: Movie, time: Integer) (Void) – Updates the time of movie
 deleteMovie(movei: Movie) (Void) – Deletes an unwanted movie from the system software
 addMovie(movie: Movie) (Void) – Adds a wanted movie to the system software
+Arrow Pointers:
+To AccountInfo - Indicates that any updation on movie selection is carried by a user holding information in class "AccountInfo"
 
 Class PostReview
 Attributes:
@@ -58,6 +67,9 @@ viewMovies() (Void): Displays a list of movies that can be seen at a theatre
 pickMovie(movie: Movie) (Void): Picks a movie that the user select
 viewTransactions() (Void) – Displays user transactional history
 cancelTicket(ticket: Ticket) (Void) – Cancels a ticket that user booked
+Arrow Pointers:
+To AccountInfo - Indicates that the operations integrated in class "UserInfo" are fully accessible by AccoutnInfo
+
 
 Class MakePayment
 Attributes:
@@ -66,6 +78,9 @@ Attributes:
 Operations: 
 confirmPurchase(ticket: Ticket) (Integer) – Confirms the purchase of ticket booked on user end
 updateSeats(ticket: Ticket) (Void) – Updates the previously booked seat with a new one if available
+Arrow Pointers:
+To Ticket - Indicates that the object in class "MakePaymet" inherits all the attributes from class "Ticket" while the user finalises the payment. 
+
 
 
 
