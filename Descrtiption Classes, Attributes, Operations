@@ -1,0 +1,75 @@
+Class Movie
+Attributes: 
+“movieTitle” (String) – Give the title of the movie 
+“date” (Integer) – Date of the movie
+“time”(Integer) – Time of the movie
+“movieRating” (String) – Rating of the film
+theatreLocation (String) – Theatre Location for the movie
+“seat” (Map – Integer, Boolean) – Key is the seat number and Boolean showing if selected seats available or not.
+Operations: 
+setName(Name: String) (Void) – Input or Sets the name of the movie
+getName(Name: String) – Output or gets the name of the movie
+getFreeSeats() (Map – Integer, Boolean) – Fetches all the free seats in map form
+isSeatFree(Index: Integer) – Returns Boolean value after checking if specified seat is free or not
+
+Class TheatreLocation
+Attributes:
+movieList: (Movie []: Array) – an array of movies that are being shown at specified theater location in form of list. 
+Operations: 
+updateMovie(Movie: Movie[]) – Updates the movie required 
+Class AccountInfo
+Attributes:
+“username” (String) – Mentions the Username 
+“password” (String) – Mentions the password of User’s Account
+“name” (String) – Mentions the Name of the User
+“emailAddress” (String) – Mentions the email address of the User
+Operations: Null
+
+Class SystemInfo
+Attributes: Null
+Operations: 
+updatedate(movie: Movie, date: Integer) (Void) – Updates the date of movie
+updatetime(movie: Movie, time: Integer) (Void) – Updates the time of movie
+deleteMovie(movei: Movie) (Void) – Deletes an unwanted movie from the system software
+addMovie(movie: Movie) (Void) – Adds a wanted movie to the system software
+
+Class PostReview
+Attributes:
+“userRating: Integer” – Stores the user rating for a movie
+“userReview: String” – Stroes the user’s comments and review for a movie
+Operations: 
+updateRating(Rating: Integer) (Void) – Updates rating of the movie
+
+Class Ticket
+Attributes:
+“seat” (Integer, Integer) – Row & Column for a specified seat
+“price” (Integer) – Price for the ticket
+Operations: 
+buyTicket() (Void) – Finalises the purchase of the ticket selected
+
+Class UserInfo
+Attributes:
+“rewardPoints” (Integer) – Points earned by user as rewards 
+“discountStatus” (Boolean) – Discount on movie for a user is eligible or not
+“transactionHistory”(Integer) – History ID of the user showing transaction till date
+Operations: 
+updateLoyalty(int: Integer) – Updates the loyalty record points of the user
+viewMovies() (Void): Displays a list of movies that can be seen at a theatre
+pickMovie(movie: Movie) (Void): Picks a movie that the user select
+viewTransactions() (Void) – Displays user transactional history
+cancelTicket(ticket: Ticket) (Void) – Cancels a ticket that user booked
+
+Class MakePayment
+Attributes:
+“transactionID” (Integer) – Stores the transaction ID of any payment done by user 
+“userTicket” (Boolean) – The ticket that is made payment for
+Operations: 
+confirmPurchase(ticket: Ticket) (Integer) – Confirms the purchase of ticket booked on user end
+updateSeats(ticket: Ticket) (Void) – Updates the previously booked seat with a new one if available
+
+
+
+
+
+
+
