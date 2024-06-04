@@ -1,0 +1,33 @@
+Databases:
+  User Account:
+    <Name, Username, Password, Preferred Payment Option, Loyalty Points, Discount Eligibilty (Senior, Student, etc.), Ticket Purchase History, Feedback History, Active Tickets>
+
+  Theater:
+    <Theater Layout, Types of Seats (Regular, Deluxe), Number of Seats Still Available>
+
+  List of Movies: 
+    <Movies Showing, Showtimes for Movies>
+
+Software System Pages:
+  1. Login/Account Page
+  2. Account Management Page
+  3. Movie Showtime Page
+  4. Movie Selection Page
+  5. Seat Selection Page
+  6. Payment Page
+  7. Ticket Confirmation/Delivery Page
+  8. User Feedback Page
+
+Payment Types: This will only interact with the Payment Page, type of Payment based from user Database's Preferred Payment Type.
+  1. Credit Card <Bank Info>
+  2. Paypal Info
+  3. Crypto Site Info <Bitcoin only>
+
+After either signing up for an account or logging into your pre-existing account, you will be able to access your account management/settings page, where you can change your username, password, preferred payment, connect your eligibile discount, and view your active ticket(s) and previous feedback reviews.
+
+In order to start your ticketing process, and logging into your account, you can enter the movie selection page to find a movie that you want to watch. After selecting your movie choice, you will bea ble to see all available showtimes (Both pages get their information from their List of Movies Database).
+After choosing your showtime, you will enter the seat selection page (The database of Theater will provide the seat types and seats available, and if deluxe seating, choose your seats), where you will order your numnber of tickets (max 20 per user per showtime). As stated previously, if deluxe seating, will also be allowed to select seat here.
+After number of tickets and seats have been selected, you will move onto the payment page in order to order the tickets, and will interact with the User Account Database to find preferred payment type and payment information, then connect to the corresponding Payment Type (e.g. Bank, Paypal, Bitcoin) aand order tickets if the purchase goes thorugh.
+If purchase goes through, the tickets will be delivered to your account through your purchase confirmation page/delivery page, with your ticket/purchase history being sent directly to the User Account Database. 
+After the tickets have been confirmed, users will be redirected to a User Feedback Page which will send the user's response to their account database and the system database.
+After feedback has been finished, return to the movie selection page. 
