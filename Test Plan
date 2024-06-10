@@ -1,0 +1,17 @@
+Priority 2 (moderate);
+    -Loyalty Points(Gain specified amount correlating to purchased ticket):
+      In order to test the web application's ability to grant a specefied amount of Loyalty points for each kind of ticket, we will make mock purchases of adult, senior, and child tickets. We will first access
+      the web application website, and search for a movie. After selecting the desired movie we will be prompted for how many tickets and what kind of tickets we would like to order. We will input for three different
+      payments, an adult ticket, a senior ticket, and a child ticket. The system will then prompt us if we would like to sign in to a Personal Account. After signing into a Personal Account, we will complete the
+      transaction. There will be a payment/ticket confirmation screen with a section confirming how many Loyalty Points have been awarded from the purchase. It is essential to note, an adult ticket will earn 10 Loyalty
+      Points, a senior ticket will earn 8 Loyalty Points, and a child ticket will earn 5 Loyalty Points. Moreover, it is essential to note, users have the ability to sign into their Personal Account at anytime before
+      a purchase to utilize or see their Loyalty Points. 
+
+    -Loyalty Points(Use up to 50 Loyalty Points per purchase):
+      In order to test the web application's ability to utilize a user's Loyalty points to recieve a discount, we will make mock purchases utilizing Loyalty Points and concur if a discount has been added to the purchase.
+      We will first access the web application website, and search for a movie. After selecting the desired movie we will be prompted for how many tickets and what kinds of tickets we would like to order. We will input an 
+      arbitrary amount of tickets to purchase. The system will then prompt us if we would like to sign into a Personal Account. After signing into a Personal Account, we will select the option to use Loyalty Points. During 
+      payment, there will be sections where the user will provide their payment information. The layout of utilizing Loyalty Points will be done in the same instance, there will be an icon bar that allows users to scroll 
+      and use up to 50 Loyalty Points per each purchase. 50 Loyalty points will provide a 10% discount, 25 Loyalty points will provide a 5% discount, etc. After completing the payment, there will be a payment/ticket 
+      confirmation screen with a section notifying the user of their used, gained, and total Loyalty Points. It is essential to note, that users will still earn Loyalty Points 
+      for each ticket on purchases that they utilize Loyalty Points on.
