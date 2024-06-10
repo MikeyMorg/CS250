@@ -15,6 +15,43 @@ Description of operations
 
 
 Development plan and timeline:
+Overview:
+Our online movie ticketing system will allow users to search and purchase movie tickets. Users will be able to attend showtimes
+at their preferred time and theater location. 
 
-Partitioning of tasks
-Team member responsibilities
+Software Architecture
+  Structure: how the components of the software system interact and utilize each other's functionality
+    Maximize cohesion of modules, allowing for an easy to follow interface
+  Security: take a C.I.A. approach
+
+Software Design
+  Structure: the system will provide icons and images
+    The systems modules and classes will be directy interconnected. 
+
+Partitioning of tasks: 
+Week 1
+  Establish Software Requirements Specification
+    Give client overview of online movie ticketing system 
+    Give client description of product functions
+    Give client description of specific interface and functional requirements
+Week 2
+  Establish Software Design Specification 
+    Give developers overview of online movie ticketing system's software architecture and implementation
+    Give developers diagram of the system's classes and their operations
+    Give developers diagram of the system's architecture, components, and design
+Week 3
+  Establish Test Plan
+    Recognize test plans for verification
+    Establish test case samples
+Week 4
+  Establish Data Management Strategy
+    Recognize specific design decisions that allow for the most efficient data management
+Week 5 & 6
+  Finalize Project Implementation
+
+Team Member Responsibilities: 
+  It is every team member's responsibility to:
+    Equally invest into the planning and development of our online movie ticketing system's interface
+    Establish open communication regarding what component of our system's interface they would like to develop/edit
+    Be diligent in recognizing the components of our system's interface that need more input
+    Establish open communication regarding new ideas and inputs
