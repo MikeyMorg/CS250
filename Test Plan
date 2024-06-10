@@ -1,4 +1,5 @@
-Priority 2 (moderate);
+Test Plan:
+    Priority 2 (Moderate):
     -Loyalty Points(Gain specified amount correlating to purchased ticket):
       In order to test the web application's ability to grant a specefied amount of Loyalty points for each kind of ticket, we will make mock purchases of adult, senior, and child tickets. We will first access
       the web application website, and search for a movie. After selecting the desired movie we will be prompted for how many tickets and what kind of tickets we would like to order. We will input for three different
