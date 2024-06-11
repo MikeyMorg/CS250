@@ -49,3 +49,22 @@ Test Plan:
       message, as there will be an option to return back, and that message will stay displayed incase they truly did not want to reply to the prompt.
 
   Priority 3 (Low):
+    - User Account Password Recovery (Alpha):
+        To test the software's ability to respond to the user when asked to recover or change the password, this test is carried out by in-house developers. We will create a random database of
+        a user that should exist in the software's memory while conducting this test. We navigate to the forgot password button on the login homepage where when we click that it directs us to a new tab of 
+        recovery password. It prompts us to input the email address that is linked to the account. Following it, the email address receives messages containing a link. When we click the link it directs 
+        us to the password reset page. After inputting the password and confirming the password we submit the details and get logged out of that tab. 
+
+    - System Performance (Beta):
+        To test the software's reaction when the system experiences an overdosage of users doing activities that our system features. We deploy the system in a beta testing environment. To check how our 
+        software responds we imitate 500+ users to perform errands like booking, browsing, navigating, searching & selecting data from data available. We also over-stimulate and under-stimulate 
+        the active number of users enter the software and exit it to check its stability under blockbuster times. Performing all such tasks with a lot of active traffic at the same time we 
+        check the response time of our software. The system should act normally in any given condition and have =]'a constant streak of responding time of less than 2.5 seconds. Expecting no lagging
+        while the errands are still active and performing. 
+
+    - Mode Of Payment (Beta):
+        To test the software's compatibility with various modes of payment if of any the user selects from. The deployed system is tested in a beta environment. We initially open the software select
+        a random movie and skipping all the middle steps, jump to the final tab where we are asked for the mode of payment. Navigating through the tab we choose the payment button and select Venmo out of Credit,
+        Debit, Bank Transfer, Paypal, Venmo, and 5 more. We than input as prompted the Venmo ID with the required details and pressed submit. The same process starting from selecting a movie and jumping to the last step
+        is done over & over for every payment mode until confirmed that it works efficiently. Simultaneously, a message is sent to both the user's e-mail address and contact number with ticket details 
+        (if opted in).
