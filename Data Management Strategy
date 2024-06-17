@@ -11,8 +11,8 @@ to get all the information from both columns by using the same decrypting sequen
 
   We have 3 databases as well, for clarity. The three databases are as following: User Account Information, Movie List, Theater information. 
   
-  The databases were split this way for efficiancy as all information related to the User's Account (Name, Username/Password, Payment Info, Transaction History, Tickets Bought/Active) is in it's own, 
-much larger database.
+  The databases were split this way for efficiancy as all information related to the User's Account (Name, Username/Password, Payment Info, Transaction History, Tickets Bought/Active) will be stored in it's own, 
+database.
   
   The choice to have two separate databases for theater information and for movie list was a decision based on the fact that all theaters will be displaying the same movie and showtimes, and thus that information could
 be shared between all the local theaters. However, some theaters have different seating arrangements between deluxe and standard seating and so information for seating would have it's own separate database. 
