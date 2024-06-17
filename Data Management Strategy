@@ -1,0 +1,18 @@
+Data Management Strategy:
+****DELETE BEFORE SUBMISSION****
+  All of your software systems revolve around persistent and potentially sensitive data. Here you should specify your data management strategy, SQL or non. (Hint: diagrams always help)
+You should also discuss your design decisions: how many databases you chose and why, how you split up the data logically, possible alternatives you could have used (both in technology and organization of data), 
+and what the tradeoffs are between your choice and alternatives.
+****DELTE ABOVE BEFORE SUBMISSION****
+
+  We will use an SQL system, which has an encyrption option that will allow all of it's data to be encrypted by the column. For example, one column containing credit card numbers will be encrypted with one set of the
+encryption, and the corresponding column with their saved security codes/PINs that will be encrypted with an entirely different sequence. This will increase the security of the individual inside as it will be impossible
+to get all the information from both columns by using the same decrypting sequence(s). 
+
+  We have 3 databases as well, for clarity. The three databases are as following: User Account Information, Movie List, Theater information. 
+  
+  The databases were split this way for efficiancy as all information related to the User's Account (Name, Username/Password, Payment Info, Transaction History, Tickets Bought/Active) is in it's own, 
+much larger database.
+  
+  The choice to have two separate databases for theater information and for movie list was a decision based on the fact that all theaters will be displaying the same movie and showtimes, and thus that information could
+be shared between all the local theaters. However, some theaters have different seating arrangements between deluxe and standard seating and so information for seating would have it's own separate database. 
