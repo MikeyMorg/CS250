@@ -18,7 +18,10 @@ database.
 could be shared between all the local theaters. However, some theaters have different seating arrangements between deluxe and standard seating and so information for seating would have it's own separate database. 
 By seperating data specific to theatre wee can effiecentyl manage every aspect of theatre, including seat availability, unique showtimes and also enable modification of dynamic seat arrangemnets. 
 
+We decied to splt data across numerous database as it renders scalability, optimizes the perfomance of system and enables ease of managment. This also allows us to conduct any updates or modicfications to a specific
+system without touching other system. Enhancements of independent system is an advantage of multiple databases. This approach give us the freedom to twaek our system as our market needs giving us the power to 
+responsive independently when and where necessary. 
 
-
+ 
 
 
