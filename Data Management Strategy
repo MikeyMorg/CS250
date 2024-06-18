@@ -22,6 +22,13 @@ We decied to splt data across numerous database as it renders scalability, optim
 system without touching other system. Enhancements of independent system is an advantage of multiple databases. This approach give us the freedom to twaek our system as our market needs giving us the power to 
 responsive independently when and where necessary. 
 
+Alternative to SQL approach would be a technical approach of NoSQL. NoSQL database provides a room of flexiiblity with unstructured data which is potent for handling/storing user's account and their personized movie metadata. 
+This database can easily help our system scale horizontally. We considered using the NoSQL while keeping the facts checked that it refrains data integrity as the ACID (Atomicity, consistency, Isolation, Durability) transaction 
+is not supported, which is crucial for booking and payment processes, thus can be complex during querying of data. 
+
+Another alternative to SQL would be data organization approach, Single comprehensive data. This database allows usage of 100-1000 users at a time which means the data is consilidated into a single database and thus reduce 
+cost associated per user. Having data accessible to user doent necessarily mean that same data can be operated with more than one user at a time. A specific data can only be rea/modified by single user at a time. These features
+helps streamline data relation and need for complex data synchronization. However, it invloves the risk of security comprosing the sensitive and personnel information stored in database.
  
 
 
