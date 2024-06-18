@@ -19,5 +19,8 @@ could be shared between all the local theaters. However, some theaters have diff
 By seperating data specific to theatre wee can effiecentyl manage every aspect of theatre, including seat availability, unique showtimes and also enable modification of dynamic seat arrangemnets. 
 
 Throughout the data managment aspect of our system we deployed NoSQL database as it provides a room of flexiiblity with unstructured data which is potent for handling/storing user's account and their personized 
-movie metadata.
+movie metadata. This database can easily help our system scale horizontally. We considered using the NoSQL while keeping the facts checked that it refrains data integrity as the ACID (Atomicity, consistency, 
+Isolation, Durability) transaction is not supported, which is crucial for booking and payment processes, thus can be complex during querying of data.
+
+
 
