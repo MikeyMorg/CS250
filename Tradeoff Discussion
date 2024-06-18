@@ -1,0 +1,16 @@
+Tradeoff Discussion:
+
+We designed our movie ticketing system to have 3 main databases: User Account Information, Movie List, Theater information. 
+A possible alternative strategy is to create databases for every aspect of our system. For example, creating seperate 
+databases for User Payment Info, User Loyalty Points, Movie List, Theater Location, Theater Seating, etc. The alternative 
+strategy to create databases for every aspect of our system would ellicit an unorginized accessing environment. 
+
+We choose to organize our system into 3 main databases to avoid confusion. We understand that efficiency is paramount, in 
+the process of accessing certain parts of our system, any situation will be recognizedby one (or more) of our 3 main databases.
+
+Another alternative computational approach is to create a singular database to hold the entire system's information. This would also
+ellicit an unorganized system, the process of accessing certain parts of our system will be tedious.
+
+We choose to adapt a SQL approach to ensure dilligence when processing and storing sensitive user information (ie: user payment 
+information or transaction history). We chose not to rely on a NSQL approach, valuing efficient data management as a priority.
+We also recognized with a SQL approach, we can optimize oranization by effectively simplifying our computation process.
