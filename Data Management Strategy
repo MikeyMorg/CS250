@@ -1,22 +1,17 @@
 Data Management Strategy:
-****DELETE BEFORE SUBMISSION****
-  All of your software systems revolve around persistent and potentially sensitive data. Here you should specify your data management strategy, SQL or non. (Hint: diagrams always help)
-You should also discuss your design decisions: how many databases you chose and why, how you split up the data logically, possible alternatives you could have used (both in technology and organization of data), 
-and what the tradeoffs are between your choice and alternatives.
-****DELTE ABOVE BEFORE SUBMISSION****
 
-  We will use an SQL system, which has an encyrption option that will allow all of it's data to be encrypted by the column. For example, one column containing credit card numbers will be encrypted with one set of the
+We will use an SQL system, which has an encyrption option that will allow all of it's data to be encrypted by the column. For example, one column containing credit card numbers will be encrypted with one set of the
 encryption, and the corresponding column with their saved security codes/PINs that will be encrypted with an entirely different sequence. This will increase the security of the individual inside as it will be impossible
 to get all the information from both columns by using the same decrypting sequence(s). 
 
-  We have 3 databases as well, for clarity. The three databases are as following: User Account Information, Movie List, Theater information. 
+We have 3 databases as well, for clarity. The three databases are as following: User Account Information, Movie List, Theater information. 
   
-  The databases were split this way for efficiancy as all information related to the User's Account (Name, Username/Password, Payment Info, Transaction History, Tickets Bought/Active) will be stored in it's own, 
+The databases were split this way for efficiency as all information related to the User's Account (Name, Username/Password, Payment Info, Transaction History, Tickets Bought/Active) will be stored in it's own, 
 database.
   
-  The choice to have two separate databases for theater information and for movie list was a decision based on the fact that all theaters will be displaying the same movie and showtimes, and so that information 
+The choice to have two separate databases for theater information and for movie list was a decision based on the fact that all theaters will be displaying the same movie and showtimes, and so that information 
 could be shared between all the local theaters. However, some theaters have different seating arrangements between deluxe and standard seating and so information for seating would have it's own separate database. 
-By seperating data specific to theatre wee can effiecentyl manage every aspect of theatre, including seat availability, unique showtimes and also enable modification of dynamic seat arrangemnets. 
+By seperating data specific to theatre wee can effiecently manage every aspect of theatre, including seat availability, unique showtimes and also enable modification of dynamic seat arrangemnets. 
 
 We decied to splt data across numerous database as it renders scalability, optimizes the perfomance of system and enables ease of managment. This also allows us to conduct any updates or modicfications to a specific
 system without touching other system. Enhancements of independent system is an advantage of multiple databases. This approach give us the freedom to twaek our system as our market needs giving us the power to 
@@ -27,8 +22,8 @@ This database can easily help our system scale horizontally. We considered using
 is not supported, which is crucial for booking and payment processes, thus can be complex during querying of data. 
 
 Another alternative to SQL would be data organization approach, Single comprehensive data. This database allows usage of 100-1000 users at a time which means the data is consilidated into a single database and thus reduce 
-cost associated per user. Having data accessible to user doent necessarily mean that same data can be operated with more than one user at a time. A specific data can only be rea/modified by single user at a time. These features
-helps streamline data relation and need for complex data synchronization. However, it invloves the risk of security comprosing the sensitive and personnel information stored in database.
+cost associated per user. Having data accessible to user doent necessarily mean that same data can be operated with more than one user at a time. A specific data can only be read/modified by a single user at a time. These features
+help streamline data relation and need for complex data synchronization. However, it invloves the risk of security comprosing the sensitive and personnel information stored in database.
  
 
 
